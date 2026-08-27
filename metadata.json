@@ -1,0 +1,6 @@
+{
+  "name": "Romantic Midnight Birthday Surprise for Sidra",
+  "description": "A luxury romantic midnight birthday countdown and magical celebration surprise website for Sidra.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

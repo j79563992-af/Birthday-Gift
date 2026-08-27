@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-script: 'Great Vibes', cursive;
+    --font-handwriting: 'Alex Brush', cursive;
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-subserif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background: radial-gradient(circle at center, #2d0a0a 0%, #120505 100%);
+    background-color: #120505;
+    color: #f5e6e8;
+    overflow-x: hidden;
+  }
+}
+
+.font-script {
+  font-family: 'Great Vibes', cursive;
+}
+
+.font-handwriting {
+  font-family: 'Alex Brush', cursive;
+}
+
+.font-serif-luxury {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-garamond {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+/* Elegant Dark Gold & Glow */
+.gold-glow {
+  color: #d4af37;
+  text-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #fff2cc 0%, #d4af37 35%, #f6d365 65%, #d4af37 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: goldShimmer 8s linear infinite;
+}
+
+.text-rose-gold-gradient {
+  background: linear-gradient(135deg, #f5e6e8 0%, #fecdd3 35%, #fb7185 70%, #fda4af 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Animations */
+@keyframes candleFlicker {
+  0%, 100% { opacity: 0.85; transform: scale(1); filter: drop-shadow(0 0 18px rgba(212, 175, 55, 0.6)); }
+  25% { opacity: 0.95; transform: scale(1.03); filter: drop-shadow(0 0 24px rgba(212, 175, 55, 0.8)); }
+  50% { opacity: 0.78; transform: scale(0.98); filter: drop-shadow(0 0 14px rgba(212, 175, 55, 0.5)); }
+  75% { opacity: 0.92; transform: scale(1.02); filter: drop-shadow(0 0 22px rgba(212, 175, 55, 0.75)); }
+}
+
+@keyframes pulseSlow {
+  0%, 100% { transform: scale(1); opacity: 0.9; }
+  50% { transform: scale(1.05); opacity: 1; }
+}
+
+@keyframes goldShimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes floatGentle {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(2deg); }
+}
+
+.animate-candle {
+  animation: candleFlicker 3.5s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulseSlow 4s ease-in-out infinite;
+}
+
+.animate-float-gentle {
+  animation: floatGentle 6s ease-in-out infinite;
+}
+
+/* Frosted & Romantic Glass Containers matching Elegant Dark */
+.glass-elegant {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.7), 0 0 25px rgba(212, 175, 55, 0.08);
+}
+
+.glass-romantic {
+  background: linear-gradient(135deg, rgba(45, 10, 10, 0.75) 0%, rgba(18, 5, 5, 0.9) 100%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(244, 63, 94, 0.2);
+  box-shadow: 0 12px 40px -10px rgba(0, 0, 0, 0.75), 0 0 30px rgba(225, 29, 72, 0.12);
+}
+
+.glass-romantic-gold {
+  background: linear-gradient(135deg, rgba(45, 10, 10, 0.8) 0%, rgba(20, 6, 6, 0.95) 100%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  box-shadow: 0 16px 45px -10px rgba(0, 0, 0, 0.85), 0 0 35px rgba(212, 175, 55, 0.15);
+}
+
+/* Elegant Cream Polaroid */
+.polaroid-card {
+  background-color: #fdfaf5;
+  color: #1f2937;
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.85), 0 0 20px rgba(212, 175, 55, 0.15);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #120505;
+}
+::-webkit-scrollbar-thumb {
+  background: #3b1010;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5a1818;
+}
+
